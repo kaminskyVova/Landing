@@ -1,0 +1,24 @@
+{
+  "name": "cye_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-watch": "^4.0.1",
+    "node-sass": "^7.0.1"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.9"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.0"
+  }
+}

@@ -1,0 +1,10 @@
+.content__wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .content__wrapper {
+    padding-top: 30px;
+  }
+}

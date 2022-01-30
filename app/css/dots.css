@@ -1,0 +1,9 @@
+.dots {
+  width: 91px;
+  height: 101px;
+  background-image: url(../images/default/dots.png);
+  position: absolute;
+  top: 79%;
+  left: 14%;
+  z-index: -1;
+}

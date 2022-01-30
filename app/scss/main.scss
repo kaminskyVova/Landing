@@ -1,0 +1,79 @@
+@import './container.scss';
+@import './header.scss';
+@import './mobile__menu.scss';
+@import './Main/previews__section.scss';
+@import './Main/work__everywhere__section.scss';
+@import './Main/slider__places.scss';
+@import './swiper__sliders.scss';
+@import './Main/slider__places.scss';
+@import './Main/benefits__section.scss';
+@import './Main/job__places.scss';
+@import './main__footer.scss';
+
+@import './modal__popup.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  font-family: 'Mulish', sans-serif;
+  background: #fff;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+input {
+  font-family: 'Mulish', sans-serif;
+}
+
+label {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

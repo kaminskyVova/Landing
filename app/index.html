@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script defer src="./script/main.js"></script>
+
+    <title>Landing Page</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="content__wrapper">
+        <!-- Header -->
+        <header class="site__header">
+            <div class="logo"><a href="#">RK</a></div>
+            <div class="header__nav-wrapper">
+                <nav class="site__nav">
+                    <ul class="site__nav-list ">
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Temukan Lokasi</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Jenis Ruang</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Komunitas</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="contacts__nav-list">
+                        <li class="nav__list-item contacts__us">
+                            <a class="nav__list-link" href="#">Untuk Startup</a>
+                        </li>
+                        <li class="nav__list-item contacts__us">
+                            <a class="nav__list-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Menu mobile control -->
+            <div class="nav-icon__wrapper">
+                <div class="nav-icon__middle"></div>
+            </div>
+        </header>
+        <!-- </Header> -->
+
+        <!-- Main -->
+        <!-- <main class="main"> -->
+        <section class="section__previews-wrapper">
+            <div class="site__header-bottom">
+                <div class="header__bottom-previews">
+                    <h1 class="previews__title">Temukan Ruang
+                        Kerja Dimanapun</h1>
+                    <div class="previews__select-wrapper">
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="">
+                            <div>
+                                <h6 class="select__title">Temukan ruang kerja di</h6>
+                                <div class="select__head">Jakarta</div>
+                            </div>
+                            <div class="select__wrapper">
+                                <ul class="select__list">
+                                    <li class="select__item" data-city="makassan">Makassan</li>
+                                    <li class="select__item" data-city="manji">Manji</li>
+                                    <li class="select__item" data-city="djambi">Djambi</li>
+                                    <li class="select__item" data-city="jakarta">Jakarta</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="join__us-btn-wrapper">
+                            <button class="join__now" type="button" data-modal-target="#modal"><span>Cari
+                                    Sekarang</span></button>
+                        </div>
+                        <div class="dots dots__previews"></div>
+                    </div>
+                </div>
+
+                <div class="slider__previews">
+                    <div class="img__wrapper out">
+                        <div class="text__out">
+                            <p class="correct__city"></p>
+                            <p class="places__count"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- work__everywhere__section -->
+        <section class="work__everywhere-wrapper">
+            <div class="dots dots__call-to-action"></div>
+            <div class="work__everywhere-top--wrapper">
+                <h2 class="everywhere__title">Pilih Ruang Kerja Sesuai Keinginanmu</h2>
+                <div class="everywhere__call-to-action--wrapper">
+                    <p class="call-to-action__text">Kami yakin kamu akan menemukan ruang kerja yang sesuai dengan
+                        keinginan dan seleramu. Kami memastikan kamu akan nyaman.</p>
+                    <a href="#work__places" class="call-to-action__link">Lihat semua jenis ruang kerja</a>
+                </div>
+            </div>
+        </section>
+        <!-- /work__everywhere__section -->
+
+        <!-- Slider__places -->
+        <div class="slider__work-everywhere--wrapper mySwiper1">
+
+            <div class="swiper-wrapper">
+
+                <div class="slider__img-wrapper--one swiper-slide">
+                    <img src="./images/slider__center/center__one.png" alt="work-place">
+                    <div class="bottom__text-wrapper">
+                        <p class="location__name">Clean Simple</p>
+                        <span class="location__count">12 Lokasi</span>
+                    </div>
+                </div>
+                <div class="slider__img-wrapper--two swiper-slide">
+                    <img src="./images/slider__center/center__two.png" alt="work-place">
+                    <div class="bottom__text-wrapper">
+                        <p class="location__name">Cafe Ambience</p>
+                        <span class="location__count">12 Lokasi</span>
+                    </div>
+                </div>
+                <div class="slider__img-wrapper--three swiper-slide">
+                    <img src="./images/slider__center/center__three.png" alt="work-place">
+                    <div class="bottom__text-wrapper">
+                        <p class="location__name">Home Office</p>
+                        <span class="location__count">12 Lokasi</span>
+                    </div>
+                </div>
+                <div class="slider__img-wrapper--one swiper-slide">
+                    <img src="./images/slider__center/center__one.png" alt="work-place">
+                    <div class="bottom__text-wrapper">
+                        <p class="location__name">Clean Simple</p>
+                        <span class="location__count">12 Lokasi</span>
+                    </div>
+                </div>
+                <div class="slider__img-wrapper--two swiper-slide">
+                    <img src="./images/slider__center/center__two.png" alt="work-place">
+                    <div class="bottom__text-wrapper">
+                        <p class="location__name">Cafe Ambience</p>
+                        <span class="location__count">12 Lokasi</span>
+                    </div>
+                </div>
+                <div class="slider__img-wrapper--three swiper-slide">
+                    <img src="./images/slider__center/center__three.png" alt="work-place">
+                    <div class="bottom__text-wrapper">
+                        <p class="location__name">Home Office</p>
+                        <span class="location__count">12 Lokasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Slider__places -->
+
+
+        <!-- Benefits__section -->
+        <section class="benefits__section-wrapper">
+            <article class="benefits__left">
+                <div class="left__wrapper">
+                    <div class="dots dots__benefits"></div>
+                    <h3 class="benefits__left-title">Kenapa Ruang Kerja?</h3>
+                    <p class="benefits__left-text">Kami telah berpengalaman melayani ratusan ribu orang dalam
+                        menemukan
+                        ruang kerja idaman mereka</p>
+                    <div class="benefits__places">
+                        <p class="places__count">600+</p>
+                        <p class="places__text">Ruang Kerja di seluruh Indonesia</p>
+                    </div>
+                    <div class="benefits__stuff">
+                        <p class="stuff__count">135+</p>
+                        <p class="stuff__text">Staff yang siap membantu Anda</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="benefits__right">
+                <div class="right__wrapper">
+                    <div class="benefits__right-content">
+                        <div class="icon__wrapper">
+                            <img src="./images/benefits/notepad.svg" alt="">
+                        </div>
+                        <div class="text__wrapper">
+                            <h5 class="right__content-title">Reservasi Mudah</h5>
+                            <p class="right__content-text">Proses pemesanan ruang kerja hanya membutuhkan waktu
+                                kurang
+                                dari
+                                2
+                                menit.</p>
+                        </div>
+                    </div>
+                    <div class="benefits__right-content">
+                        <div class="icon__wrapper">
+                            <img src="./images/benefits/clock.svg" alt="">
+                        </div>
+                        <div class="text__wrapper">
+                            <h5 class="right__content-title">Waktu yang Fleksibel</h5>
+                            <p class="right__content-text">Proses pemesanan ruang kerja hanya membutuhkan waktu
+                                kurang
+                                dari
+                                2
+                                menit.</p>
+                        </div>
+                    </div>
+                    <div class="benefits__right-content">
+                        <div class="icon__wrapper">
+                            <img src="./images/benefits/clock.svg" alt="">
+                        </div>
+                        <div class="text__wrapper">
+                            <h5 class="right__content-title">Kustomisasi Ruang</h5>
+                            <p class="right__content-text">Proses pemesanan ruang kerja hanya membutuhkan waktu
+                                kurang
+                                dari
+                                2
+                                menit.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- /benefits__section -->
+
+        <!-- job__places -->
+        <section class="job__places">
+            <div class="dots dots__job-places"></div>
+            <h2 class="job__places-title">Ruang Kerja di dekatmu</h2>
+
+            <section class="job__places-previews" id="work__places">
+                <a href="#" class="job__place-wrapper--link">
+                    <div class="job__place-wrapper">
+                        <div class="job__place-img">
+                            <img src="./images/work__places/place__one.png" alt="Summer Tower">
+                        </div>
+                        <div class="job__place-description">
+                            <p class="description__title">Summer Tower</p>
+                            <p class="description__address">Jl. Lorem Ipsum no.62, Wakanda Universe</p>
+                            <span class="description__price"><b>Rp 150.000</b> / hari</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="job__place-wrapper--link">
+                    <div class="job__place-wrapper">
+                        <div class="job__place-img">
+                            <img src="./images/work__places/place__two.png" alt="Summer Tower">
+                        </div>
+                        <div class="job__place-description">
+                            <p class="description__title">Summer Tower</p>
+                            <p class="description__address">Jl. Lorem Ipsum no.62, Wakanda Universe</p>
+                            <span class="description__price"><b>Rp 150.000</b> / hari</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="job__place-wrapper--link">
+                    <div class="job__place-wrapper">
+                        <div class="job__place-img">
+                            <img src="./images/work__places/place__three.png" alt="Summer Tower">
+                        </div>
+                        <div class="job__place-description">
+                            <p class="description__title">Summer Tower</p>
+                            <p class="description__address">Jl. Lorem Ipsum no.62, Wakanda Universe</p>
+                            <span class="description__price"><b>Rp 150.000</b> / hari</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="job__place-wrapper--link">
+                    <div class="job__place-wrapper">
+                        <div class="job__place-img">
+                            <img src="./images/work__places/place__four.png" alt="Summer Tower">
+                        </div>
+                        <div class="job__place-description">
+                            <p class="description__title">Summer Tower</p>
+                            <p class="description__address">Jl. Lorem Ipsum no.62, Wakanda Universe</p>
+                            <span class="description__price"><b>Rp 150.000</b> / hari</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="job__place-wrapper--link">
+                    <div class="job__place-wrapper">
+                        <div class="job__place-img">
+                            <img src="./images/work__places/place__five.png" alt="Summer Tower">
+                        </div>
+                        <div class="job__place-description">
+                            <p class="description__title">Summer Tower</p>
+                            <p class="description__address">Jl. Lorem Ipsum no.62, Wakanda Universe</p>
+                            <span class="description__price"><b>Rp 150.000</b> / hari</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="job__place-wrapper--link">
+                    <div class="job__place-wrapper">
+                        <div class="job__place-img">
+                            <img src="./images/work__places/place__six.png" alt="Summer Tower">
+                        </div>
+                        <div class="job__place-description">
+                            <p class="description__title">Summer Tower</p>
+                            <p class="description__address">Jl. Lorem Ipsum no.62, Wakanda Universe</p>
+                            <span class="description__price"><b>Rp 150.000</b> / hari</span>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </section>
+        <!-- /job__places -->
+        <!-- </main> -->
+        <!-- /Main -->
+
+        <!-- FOOTER -->
+        <footer class="main__footer">
+            <div class="main__footer-content--wrapper">
+                <div class="footer__left-wrapper">
+                    <div class="quote__wrapper">
+                        <div class="dots dots__footer"></div>
+                        <div class="footer__left-quote">
+                            <div class="quote__logo">
+                                <div class="symbol__one">,</div>
+                                <div class="symbol__two">,</div>
+                            </div>
+                        </div>
+                        <h3 class="quote__text">Apa kata mereka tentang ruang kerja</h3>
+                    </div>
+                </div>
+
+                <div class="footer__right-wrapper">
+                    <div class="right__text-wrapper">
+                        <h3 class="footer__right-title">Help us improve our productivity</h3>
+                        <p class="footer__right-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="footer__right-slider">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/slider__bottom/bottom__one.png" data-name="first" alt="employee">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/slider__bottom/bottom__two.png" data-name="second"
+                                        alt="employee">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/slider__bottom/bottom__three.png" data-name="third"
+                                        alt="employee">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/slider__bottom/bottom__four.png" data-name="fourth"
+                                        alt="employee">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/slider__bottom/bottom__five.png" data-name="fifth"
+                                        alt="employee">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="persons__info">
+                            <h3 class="person__name"></h3>
+                            <p class="person__position"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+    </div>
+
+    <!-- POPUP -->
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend class="title">Enter your details:</legend>
+                <label for="fname">First name:</label><br><hr>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br><hr>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="mesage">Your mesage:</label><br>
+                <textarea name="mesage" id="mesage" cols="30" rows="10"></textarea>
+                <button class="submit" type="submit">Submin</button>
+                <button class="reset" type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </div>
+    <div id="overlay"></div>
+
+    <!--  -->
+
+</body>
+
+</html>

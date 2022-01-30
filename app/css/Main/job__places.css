@@ -1,0 +1,81 @@
+.job__places {
+  position: relative;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+.job__place-wrapper--link {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.job__place-wrapper--link:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.job__places-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.3px;
+  color: #121212;
+  margin-bottom: 50px;
+}
+
+.job__places-previews {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job__place-wrapper {
+  border-radius: 10px;
+}
+
+.job__place-img {
+  margin-bottom: 5px;
+}
+.job__place-img img {
+  border-radius: 10px;
+  width: 330px;
+}
+
+.job__place-description {
+  padding: 2px;
+}
+
+.description__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+  color: #1ea59a;
+}
+
+.description__address {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  color: #404852;
+}
+
+.description__price {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.346154px;
+  color: #121212;
+}
+
+.dots__job-places {
+  width: 91px;
+  height: 101px;
+  background-image: url(../images/default/dots.png);
+  position: absolute;
+  top: 47px;
+  right: 169px;
+  z-index: -1;
+}
