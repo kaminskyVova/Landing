@@ -10,19 +10,19 @@ const previewsImagesToggler = (target) => {
     correctCity.textContent = `${target.dataset.city.toUpperCase()}`;
 
     if (target.dataset.city === 'manji') {
-      out.style.backgroundImage = `url('center__one.png')`;
+      out.style.backgroundImage = `url('./images/slider__center/center__one.png')`;
       placesCount.textContent = `134+ Tempat di kota ini`;
     }
     if (target.dataset.city === 'makassan') {
-      out.style.backgroundImage = `url('center__two.png')`;
+      out.style.backgroundImage = `url('./images/slider__center/center__two.png')`;
       placesCount.textContent = `220+ Tempat di kota ini`;
     }
     if (target.dataset.city === 'djambi') {
-      out.style.backgroundImage = `url('center__three.png')`;
+      out.style.backgroundImage = `url('./images/slider__center/center__three.png')`;
       placesCount.textContent = `85+ Tempat di kota ini`;
     }
     if (target.dataset.city === 'jakarta') {
-      out.style.backgroundImage = `url("top__one.png")`;
+      out.style.backgroundImage = `url('./images/slider__top/top__one.png')`;
       placesCount.textContent = `300+ Tempat di kota ini`;
     }
 
@@ -92,6 +92,7 @@ const personInfo = (target) => {
 const controlMenu = (target) => {
   const burger = document.querySelector('.nav-icon__middle');
   const siteNavList = document.querySelector('.header__nav-wrapper');
+  const overlay = document.getElementById('overlay');
 
   if (
     target.closest('.nav-icon__wrapper') ||
@@ -100,49 +101,87 @@ const controlMenu = (target) => {
   ) {
     burger.classList.toggle('active');
     siteNavList.classList.toggle('show__menu');
+    // overlay.classList.toggle('active')
   }
+
+  // if (target.classList.contains('overlay')) {
+  //   console.log('lll');
+  //   siteNavList.classList.toggle('show__menu');
+  // }
+
+
+  console.log(target);
 };
 
-// Modal
-// if there are others
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
 
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
+const modalControl = (target) => {
+  const openModalButtons = document.querySelectorAll('[data-modal-target]');
+  const closeModalButtons = document.querySelectorAll('[data-close-button]');
+  const overlay = document.getElementById('overlay');
 
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
+  openModalButtons.forEach((button) => {
+    if (
+      target.closest('.job__place-wrapper--link') ||
+      target.closest('.join__us-btn-wrapper')
+    ) {
+      const modal = document.querySelector(button.dataset.modalTarget);
+      openModal(modal);
+    }
+  });
 
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
+  // overlay
+  overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active');
+    modals.forEach((modal) => {
+      closeModal(modal);
+    });
+  });
+
+  closeModalButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal');
+      closeModal(modal);
+    });
+  });
+};
 
 function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  if (modal === null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+  if (modal === null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
 
+const usersObj = [];
 
+const addUserContact = (contact) => {
+  usersObj.push(contact);
+  console.log('usersObj: ', usersObj);
+};
+
+const formControl = () => {
+  const form = document.querySelector('.form');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const modal = e.target.closest('.modal');
+
+    const formData = new FormData(form);
+
+    const userContacts = Object.fromEntries(formData);
+
+    addUserContact(userContacts);
+
+    form.reset();
+    closeModal(modal);
+  });
+};
+formControl();
 
 // Sliders
 
@@ -177,9 +216,9 @@ const swiper2 = new Swiper('.mySwiper2', {
 
 document.body.addEventListener('click', (e) => {
   const target = e.target;
-  // createPopupForm(target)
   personInfo(target);
   controlMenu(target);
+  modalControl(target);
   previewsImagesToggler(target);
   previewsSelectToggler(target);
 });

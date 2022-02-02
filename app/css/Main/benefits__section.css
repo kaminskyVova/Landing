@@ -28,12 +28,6 @@
     margin-top: 10%;
   }
 }
-@media (max-width: 375px) {
-  .left__wrapper {
-    margin-left: 21%;
-  }
-}
-
 .benefits__left {
   display: flex;
   align-items: center;
@@ -126,12 +120,6 @@
     width: 100%;
   }
 }
-@media (max-width: 375px) {
-  .benefits__right {
-    margin-left: 22%;
-  }
-}
-
 .benefits__right-content {
   margin-bottom: 90px;
   width: 400px;

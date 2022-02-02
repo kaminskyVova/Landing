@@ -12,12 +12,14 @@
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-watch": "^4.0.1",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "sass-autoprefixer": "^1.0.1"
   },
   "resolutions": {
     "graceful-fs": "^4.2.9"
   },
   "devDependencies": {
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.0"
   }

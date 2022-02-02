@@ -15,7 +15,7 @@
 }
 @media (max-width: 375px) {
   .work__everywhere-wrapper .work__everywhere-top--wrapper {
-    margin-right: -24%;
+    margin-right: 0 auto;
   }
 }
 
@@ -47,7 +47,6 @@
 }
 @media (max-width: 375px) {
   .everywhere__title {
-    width: 100%;
     line-height: 41px;
     text-align: center;
   }

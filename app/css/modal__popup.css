@@ -10,12 +10,12 @@
   background-color: #d7be90;
   color: #fff;
   font-size: 19px;
-  width: 500px;
-  max-width: 80%;
 }
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
+  min-height: 490px;
+  padding: 10px;
 }
 
 .modal-header {
@@ -71,24 +71,39 @@ fieldset {
   border-color: #d16315;
 }
 
-#fname,
-#lname {
+.inputs__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.first__name,
+.last__name,
+.phone,
+.email {
   border: none;
   border-radius: 10px;
   outline: none;
   width: 250px;
   height: 36px;
+  margin-bottom: 15px;
 }
 
-#mesage {
-  border: navajowhite;
+.textarea__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.message {
+  outline: none;
+  border: none;
   border-radius: 10px;
 }
 
 .submit,
 .reset {
-  width: 85px;
-  height: 30px;
+  width: 100px;
+  height: 40px;
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -96,8 +111,19 @@ fieldset {
 
 .submit {
   background-color: #0bc522;
+  margin-right: 20px;
+}
+
+.submit:hover,
+.submit:active {
+  background-color: #a8da20;
 }
 
 .reset {
-  background-color: #c5300b;
+  background-color: #e60e19;
+}
+
+.reset:hover,
+.reset:active {
+  background-color: #eb4e26;
 }

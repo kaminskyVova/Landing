@@ -7,7 +7,12 @@
 .job__place-wrapper--link {
   margin-bottom: 30px;
   border-radius: 10px;
+  background-color: #fff;
   margin: auto;
+  margin-bottom: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .job__place-wrapper--link:hover {
